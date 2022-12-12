@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function Project(props) {
+function ProjectPage(props) {
     return (
         <div className='container-project'>
             <h7>{props.title}</h7>
@@ -19,4 +19,4 @@ function Project(props) {
     )
 }
 
-export default Project;
+export default ProjectPage;

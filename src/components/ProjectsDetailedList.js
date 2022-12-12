@@ -1,6 +1,7 @@
 // CarouselElements.jsx
 import React from "react";
-import Project from "./Project"; // Import the Project component
+import ProjectPage from "./ProjectPage";
+
 
 // Define an array of data for the carousel elements
 const data = [
@@ -36,7 +37,7 @@ const data = [
 
 // Use the map method to create the carousel elements dynamically
 const elements = data.map(item => (
-  <Project
+  <ProjectPage
     title={item.title}
     description={item.description}
     img1={item.img1}
