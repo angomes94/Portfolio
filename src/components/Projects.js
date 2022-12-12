@@ -1,10 +1,10 @@
 import React from "react";
-import ProjectsIntro from "./ProjectsIntro.js"
+import ProjectsIntroWrapper from "./ProjectsIntro.js";
 
 function Projects(){
     return (    
           <div className="container-projects-grid">
-            {ProjectsIntro.map(project => project)}
+            {ProjectsIntroWrapper()}
           </div>
       );
     }
