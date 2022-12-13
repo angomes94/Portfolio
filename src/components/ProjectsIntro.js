@@ -52,10 +52,10 @@ const data = [
 // Create an array of elements from the data array
 const ProjectsIntro = data.map(project => (
   <div key={project.id} className="project-cell">
-    <h1 className="project-title">
+    <h1 className="project-title font-roboto-bold">
       {project.title}
     </h1>
-    <p className="project-intro"> {project.intro}</p>
+    <p className="project-intro font-montserrat-extralight"> {project.intro}</p>
   </div>
 ));
 

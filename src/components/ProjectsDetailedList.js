@@ -2,7 +2,6 @@
 import React from "react";
 import ProjectPage from "./ProjectPage";
 
-
 // Define an array of data for the carousel elements
 const data = [
   {
