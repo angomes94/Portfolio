@@ -1,5 +1,3 @@
-import {useEffect, useState} from "react";
-import { motion } from "framer-motion";
 import Header from "./Header";
 import Frontpage from "./Frontpage";
 import AboutMe from "./AboutMe";

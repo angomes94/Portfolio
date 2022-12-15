@@ -49,7 +49,7 @@ const data = [
 ];
 
 
-// Create an array of elements from the data array
+
 const ProjectsIntro = data.map(project => (
   <div key={project.id} className="project-cell">
     <h1 className="project-title font-roboto-bold">
@@ -59,7 +59,7 @@ const ProjectsIntro = data.map(project => (
   </div>
 ));
 
-// Define a component that wraps the ProjectsIntro array
+
 function ProjectsIntroWrapper() {
   return (
     <React.Fragment>
@@ -68,5 +68,5 @@ function ProjectsIntroWrapper() {
   );
 }
 
-// Export the ProjectsIntroWrapper component
+
 export default ProjectsIntroWrapper;

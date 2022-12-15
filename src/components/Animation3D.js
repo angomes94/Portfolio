@@ -4,7 +4,7 @@ import Blob from '../components/blob'
 
 export default function App() {
     return (
-        <div className='container-blob'>
+        <div className="blob">
             <Canvas
                 camera={{
                     position: [0.0, 0.0, 8.0]
