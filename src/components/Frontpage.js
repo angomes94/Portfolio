@@ -1,5 +1,6 @@
 import React from "react";
 import {motion} from "framer-motion"
+import { EnvelopeIcon } from '@heroicons/react/24/outline'
 
 function Frontpage() {
 
@@ -13,7 +14,8 @@ function Frontpage() {
     }
 
     return (
-        <div className="front-page-container" >
+        <div className="front-page-container">
+        <div className="front-page-text-wrapper">
             <motion.h1
             className="font-roboto-condensed-light"
                 variants={animation}
@@ -48,6 +50,21 @@ function Frontpage() {
                     duration:1
                 }}>Started out in electronics but fell in love with coding.</motion.h3>
         </div>
+        <div className="frontpage-button-wrapper">
+        <motion.div className="frontpage-button-motion"
+        initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 1,
+        delay: 0.7,
+        ease: [0, 0.71, 0.2, 1.01]
+      }}>
+        <EnvelopeIcon className="frontpage-button-email"
+        />
+        </motion.div>
+        </div>
+    </div>
+        
     )
 }
 

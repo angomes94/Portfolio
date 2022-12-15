@@ -1,9 +1,10 @@
-import React from "react";
+import {useEffect, useState} from "react";
+import { motion } from "framer-motion";
 import Header from "./Header";
 import Frontpage from "./Frontpage";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
-import Contacts from "./Contacts";
+
 
 function App() {
   return (
@@ -12,8 +13,6 @@ function App() {
      <Frontpage/>
      <AboutMe/>
      <Projects/>
-     <Contacts/>
-
     </div>
   );
 }
