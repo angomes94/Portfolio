@@ -1,6 +1,7 @@
 import React from "react";
-import {motion} from "framer-motion"
-import { EnvelopeIcon } from '@heroicons/react/24/outline'
+import {motion} from "framer-motion";
+import { EnvelopeIcon } from '@heroicons/react/24/outline';
+import Animation3D from "./Animation3D.js";
 
 function Frontpage() {
 
@@ -49,6 +50,7 @@ function Frontpage() {
                     delay: 0.4,
                     duration:1
                 }}>Started out in electronics but fell in love with coding.</motion.h3>
+                <Animation3D className = "blob"/>
         </div>
         <div className="frontpage-button-wrapper">
         <motion.div className="frontpage-button-motion"
