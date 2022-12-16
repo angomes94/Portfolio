@@ -1,6 +1,6 @@
 import React from "react";
 import {motion} from "framer-motion";
-import {EnvelopeIcon} from '@heroicons/react/24/outline';
+import {EnvelopeIcon} from '@heroicons/react/24/solid';
 import Animation3D from "./Animation3D.js";
 
 function Frontpage() {
@@ -11,12 +11,21 @@ function Frontpage() {
         },
         visible: {
             x: 0
+        },
+        button_hidden: {
+            x: "+100vw"
+        },
+        button_visible:{
+            x: 0
         }
+
+
     }
+
 
     return (    
         <div className="front-page-container">
-        <Animation3D/>
+        <Animation3D/>     
                     <motion.h1
                         className="font-roboto-condensed-light"
                         variants={animation}
@@ -51,21 +60,15 @@ function Frontpage() {
                         }}>Started out in electronics but fell in love with coding.</motion.h3>
                     <motion.div
                         className="frontpage-button-motion"
-                        initial={{
-                            opacity: 0,
-                            scale: 0.5
-                        }}
-                        animate={{
-                            opacity: 1,
-                            scale: 1
-                        }}
+                        variants={animation}
+                        initial="button_hidden"
+                        animate="button_visible"
                         transition={{
-                            duration: 1,
-                            delay: 0.7,
-                            ease: [0, 0.71, 0.2, 1.01]
+                            ease: "easeIn",
+                            delay: 0.2,
+                            duration: 1
                         }}>
                         <EnvelopeIcon className="frontpage-button-email" />
-                        <p>Email me!</p>
                     </motion.div>
                 </div>
             

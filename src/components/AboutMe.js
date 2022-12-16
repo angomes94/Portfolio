@@ -3,7 +3,7 @@ import Portrait from "../images/portrait.jpg"
 
 function AboutMe() {
     return (
-        <div className="about-me-container">
+        <div id="aboutme" className="about-me-container">
         <div className="about-me-wrapper">
             <div className="about-me-text">
                 <h4 className="font-roboto-condensed-bold">About Me</h4>
