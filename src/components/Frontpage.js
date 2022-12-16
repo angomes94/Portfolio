@@ -5,31 +5,25 @@ import Animation3D from "./Animation3D.js";
 
 function Frontpage() {
 
-    const animation = {
-        hidden: {
+    const variants = {
+        left_hidden: {
             x: "-100vw"
         },
         visible: {
             x: 0
         },
-        button_hidden: {
+        right_hidden: {
             x: "+100vw"
         },
-        button_visible:{
-            x: 0
-        }
-
-
     }
-
 
     return (    
         <div className="front-page-container">
         <Animation3D/>     
                     <motion.h1
                         className="font-roboto-condensed-light"
-                        variants={animation}
-                        initial="hidden"
+                        variants={variants}
+                        initial="left_hidden"
                         animate="visible"
                         transition={{
                             ease: "easeIn",
@@ -38,8 +32,8 @@ function Frontpage() {
                     </motion.h1>
                     <motion.h2
                         className="font-roboto-condensed-bold"
-                        variants={animation}
-                        initial="hidden"
+                        variants={variants}
+                        initial="left_hidden"
                         animate="visible"
                         transition={{
                             ease: "easeIn",
@@ -50,8 +44,8 @@ function Frontpage() {
 
                     <motion.h3
                         className="font-roboto-condensed-regular"
-                        variants={animation}
-                        initial="hidden"
+                        variants={variants}
+                        initial="left_hidden"
                         animate="visible"
                         transition={{
                             ease: "easeIn",
@@ -60,9 +54,9 @@ function Frontpage() {
                         }}>Started out in electronics but fell in love with coding.</motion.h3>
                     <motion.div
                         className="frontpage-button-motion"
-                        variants={animation}
-                        initial="button_hidden"
-                        animate="button_visible"
+                        variants={variants}
+                        initial="right_hidden"
+                        animate="visible"
                         transition={{
                             ease: "easeIn",
                             delay: 0.2,
