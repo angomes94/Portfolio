@@ -48,7 +48,6 @@ const ProjectsIntro = data.map(project => (
     <motion.div
         whileHover={{
             scale: 1.1,
-    
         }}
         key={project.id}
         className="project-cell">

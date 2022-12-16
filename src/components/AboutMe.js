@@ -7,15 +7,15 @@ function AboutMe() {
     const variants = {
         left_hidden: {
           x: "-100vw",
-          transition: { ease: "easeIn", duration: 0.5}
+          transition: {ease: "easeIn", duration: 1}
         },
         visible: {
           x: 0,
-          transition: {ease: "easeIn", duration: 0.5}
+          transition: {ease: "easeIn", duration: 1}
         },
         right_hidden: {
           x: "+100vw",
-          transition: {ease: "easeIn", duration: 0.5}
+          transition: {ease: "easeIn", duration: 1}
         }
       };
 
@@ -32,7 +32,6 @@ function AboutMe() {
       textControls.start("left_hidden");
       imageControls.start("right_hidden");
     }
-    console.log("Element is in view: ", isInView)
   }, [textControls, imageControls, isInView]);
 
 
