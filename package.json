@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@heroicons/react": "^2.0.13",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.0",
     "@react-three/fiber": "^8.9.1",
     "@types/three": "^0.146.0",
     "framer-motion": "^7.6.19",

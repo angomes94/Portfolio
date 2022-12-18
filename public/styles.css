@@ -6,6 +6,13 @@
 
 body{background-color: #fffffe;}
 
+
+/*Color pallet
+
+Raspberry #8A307F, Blues #79A7D3 #6883BC
+*/
+
+
 /* Fonts */
 
 /*Roboto*/
@@ -155,24 +162,6 @@ h1, h3 {
   color: #5f6c7b;
 }
 
-
-.frontpage-button-email, .frontpage-button-motion{
-  position: absolute;
-  bottom: 15%;
-  right: 5%;
-  width: 80px;
-  height: 80px;
-  color:#FC766AFF ;
-}
-
-.frontpage-button-motion p {
-  position: relative;
-  top: 60px;
-  left: 5px;
-  
-}
-
-
 /* About me */
 
 .about-me-container{
@@ -254,7 +243,7 @@ flex-direction: column;
   height: 90%;
   grid-template-columns: 20vw 20vw 20vw;
   grid-gap: 30px;
-  padding: 2rem;
+  padding: 20px 0px 20px 0px;
 }
 
 /* ProjectsIntro*/
@@ -295,13 +284,13 @@ flex-direction: column;
   align-items: center;
   justify-content: center ;
   width: 100%;
-  height: 50vh;
+  height: 20vh;
 }
 
 .contacts-title {
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: #094067;
-  padding: 4rem 4rem 2rem 4rem;
+  padding-bottom: 1rem;
 }
 
 .container-square-border{
@@ -309,26 +298,22 @@ flex-direction: column;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 70vw;
+  width: 60vw;
   height: 80%;
-  border: 5px solid #90b4ce;
+  border: 2px solid #90b4ce;
 
 }
 
 .wrapper-button{
   display: flex;
   width: 100%;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 
-.contacts-button{
-  width: 100px;
-  height: 100px;
-  color:#3da9fc ;
 
-}
 
 
 /* ProjectsPage 

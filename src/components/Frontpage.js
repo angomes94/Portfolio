@@ -1,6 +1,5 @@
 import React from "react";
 import {motion} from "framer-motion";
-import {EnvelopeIcon} from '@heroicons/react/24/solid';
 import Animation3D from "./Animation3D.js";
 
 function Frontpage() {
@@ -62,7 +61,6 @@ function Frontpage() {
                             delay: 0.2,
                             duration: 1
                         }}>
-                        <EnvelopeIcon className="frontpage-button-email" />
                     </motion.div>
                 </div>
             

@@ -2,6 +2,7 @@ import Header from "./Header";
 import Frontpage from "./Frontpage";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
      <Frontpage/>
      <AboutMe/>
      <Projects/>
+     <Contact/>
     </div>
   );
 }
