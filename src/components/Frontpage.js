@@ -62,8 +62,7 @@ function Frontpage() {
                             duration: 1
                         }}>
                     </motion.div>
-                </div>
-            
+                </div>           
 
     )
 }

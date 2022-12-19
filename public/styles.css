@@ -275,6 +275,32 @@ flex-direction: column;
  
 }
 
+/* Expamdable Card */
+
+.expanded-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 50vh;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  overflow: scroll;
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  }
+  
+  .close-button {
+  justify-self: end;
+  align-self: start;
+  margin: 10px;
+  }
+  
+  
 
 /* Contacts */
 
