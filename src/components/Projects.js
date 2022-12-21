@@ -1,6 +1,7 @@
 import {useEffect, useRef}  from "react";
-import ProjectsIntroWrapper from "./ProjectsIntro.js";
+import ProjectCard from "./ProjectCard.js";
 import { motion, useInView, useAnimation} from "framer-motion"
+
 
 
 function Projects(){
@@ -49,7 +50,7 @@ function Projects(){
         <div ref={ref} id="projects" className="projects-wrapper">
             <motion.h5 animate={textControls} initial = "left_hidden" variants ={variants} className="container-projects-title font-roboto-condensed-bold">Projects</motion.h5>
             <motion.div animate={gridControls} initial = "grid_hidden" variants ={variants} className="container-projects-grid">
-                {ProjectsIntroWrapper()}
+                {ProjectCard()}
             </motion.div>
         </div>    
     );
