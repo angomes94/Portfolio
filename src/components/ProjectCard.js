@@ -32,9 +32,9 @@ function ProjectCard() {
 
     const ProjectsIntro = dataProjectCell.map(project => (
         <motion.div
-            whileHover={{
-                scale: 1.1
-            }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
             key={project.id}
             className="project-cell"
             onClick={() => toggleExpandedCard(project.id)}>
@@ -49,12 +49,12 @@ function ProjectCard() {
     return (
         <React.Fragment>
             {
-                isExpanded && <motion.div className="expanded-card">
+                isExpanded && <div className="expanded-card">
                         <IconButton onClick={toggleExpandedCard} className="close-button">
                             <CloseIcon/>
                         </IconButton>
                         <ProjectCardExpandedView projectId={selectedProject}/>
-                    </motion.div>
+                    </div>
             }
 
             {ProjectsIntro}

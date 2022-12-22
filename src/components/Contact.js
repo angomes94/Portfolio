@@ -65,9 +65,10 @@ function Contact() {
                     Get in touch
                 </h6>
                 <div className="wrapper-button">
-                    <IconButton size="large" onClick={openPopover} className="icon"><EmailIcon/></IconButton>
+                    <IconButton size="large" style={{ color: '#04cfff' }} onClick={openPopover} className="icon"><EmailIcon/></IconButton>
                     <IconButton
                         size="large"
+                        style={{ color: '#04cfff' }}
                         onClick={() => window.open(url, '_blank', 'noopener,noreferrer')}
                         className="icon"><LinkedInIcon/></IconButton>
                     <Popover

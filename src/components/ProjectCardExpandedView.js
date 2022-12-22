@@ -10,7 +10,7 @@ function ProjectCardExpandedView(props) {
   if (project) {
     return (
         <div className="container-project">
-         <h7 className = "font-roboto-bold">{project.title}</h7>
+         <h7 className = "font-roboto-bold">{project.title} <span className="font-montserrat-thin">{project.date}</span></h7>
             <div className="wrapper-project">
                 <p className="description font-montserrat-extralight">{project.description}</p>
                 <div className="space"></div>

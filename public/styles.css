@@ -7,10 +7,7 @@
 body{background-color: #fffffe;}
 
 
-/*Color pallet
 
-Raspberry #8A307F, Blues #79A7D3 #6883BC
-*/
 
 
 /* Fonts */
@@ -93,7 +90,10 @@ Raspberry #8A307F, Blues #79A7D3 #6883BC
     font-weight: 900;   
 }
 
+/*Color pallet
 
+Hex Codes: Azul escuro #0045f6 // preto #000000  // cinza escuro #1f1f1f // azul vivo #04cfff // branco #ffffff
+*/
 
 
 /* Header */
@@ -104,14 +104,14 @@ header{
     justify-content: center;
     width: 100%;
     height: 10vh;
-    background-color: #fffffe;
+    background-color: #000000;
 }
 
 a{   
     font-size: 20px;
     padding: 0px 20px 0 0px;
-    color: #094067;
-    background-color:#fffffe;
+    color: #ffffff;
+    background-color:#000000;
 }
 
 
@@ -122,6 +122,7 @@ a{
   position: relative;
   width: 100%;
   height: 100vh;
+  background-color: #000000;
 }
 
 
@@ -132,7 +133,6 @@ a{
   height: 100%;
   width: 100%;
 }
-
 
 
 h1{
@@ -148,7 +148,7 @@ position: absolute;
 top: 42%;
 left: 2rem;
 font-size: 3rem;
-color: #094067;
+color: #ffffff;
 }
 
 h3{
@@ -159,39 +159,64 @@ font-size: 1rem;
 
 h1, h3 {
   position: absolute;
-  color: #5f6c7b;
+  color: #ffffff;
 }
 
 /* About me */
 
-.about-me-container{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    background-color: #d8eefe;
-    
-
+.about-me-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative; /* added to allow z-index */
+  z-index: 1; /* added to stack the triangle behind the other elements */
 }
+
+.about-me-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0045f6; /* blue color */
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%); /* creates an upward-pointing equilateral triangle */
+  z-index: 0; /* added to stack the triangle behind the other elements */
+}
+
+.about-me-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000; /* white color */
+  z-index: -1; /* added to stack the white background behind the triangle */
+}
+
+
 
 .about-me-wrapper{
     display: flex;
     flex-direction:row;
-    width: 80%;
+    width: 100%;
     align-items: center;
-
-
 }
 
 .about-me-text h4 {
     font-size: 2rem;
-    color: #094067;
+    color: #ffffff;
     margin-bottom: 50px;
+    text-decoration: underline #04cfff;
+    text-underline-offset: 0.3em;
+    padding-bottom: 10px;
 
 }
 
 .about-me-text p {
     font-size: 1rem;
-    color: #5f6c7b;
+    color: #ffffff;
     line-height: 2;
 
 }
@@ -207,16 +232,19 @@ h1, h3 {
 }
 
 .space{
-    flex: 1;
+    flex: 2;
 }
 
 
 .img-portrait{
+flex: 1;
 height: 320px;
 width: 300px;
 border-radius: 50%;
-border: 10px solid #90b4ce;
+}
 
+.space2{
+  flex: 1;
 }
 
 /*Projects*/
@@ -226,14 +254,21 @@ width: 100%;
 height: 100vh;
 display: flex;
 flex-direction: column;
-
-
+background-color: #ffffff;
+opacity: 1;
+background-image:  radial-gradient(#0045f6 0.5px, transparent 0.5px), radial-gradient(#0045f6 0.5px, #ffffff 0.5px);
+background-size: 20px 20px;
+background-position: 0 0,10px 10px;
 }
+
+
 
 .container-projects-title{
   font-size: 2rem;
-  color: #094067;
+  color: #000000;
   padding: 2rem;
+  text-decoration: underline #04cfff;
+  text-underline-offset: 0.3em;
 }
 
 .container-projects-grid {
@@ -242,8 +277,8 @@ flex-direction: column;
   width: 100%;
   height: 90%;
   grid-template-columns: 20vw 20vw 20vw;
-  grid-gap: 30px;
-  padding: 20px 0px 20px 0px;
+  grid-gap: 40px;
+  padding: 30px 0px 30px 0px;
 }
 
 /* ProjectsIntro*/
@@ -251,7 +286,8 @@ flex-direction: column;
 
 .project-cell {
   display: flex;
-  background-color: #3da9fc;
+  cursor: pointer;
+  background-color: #04cfff;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -263,14 +299,19 @@ flex-direction: column;
 
 .project-title{
   position: static;
-  color: #fffffe;
-
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: underline #ffffff 0.2em;
+  text-underline-offset: 0.3em;
+  padding-bottom: 5px;
+  
 }
 
 .project-intro{
   padding-top: 10px;
+  cursor: pointer;
   line-height: 1.5;
-  color: #fffffe;
+  color: #ffffff;
   padding: 10px 30px 0px 30px;
  
 }
@@ -282,12 +323,12 @@ flex-direction: column;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50vw;
-  height: 50vh;
-  background-color: #fff;
+  width: 60vw;
+  height: 60vh;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-  overflow: scroll;
+  overflow:scroll;
   z-index: 1000;
   }
   
@@ -322,6 +363,8 @@ h7{
 .wrapper-images {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   flex: 2;
   margin-right: 20px;
@@ -330,6 +373,8 @@ h7{
 .description {
   flex: 2;
   margin-left: 20px;
+  border: 2px solid #90b4ce;
+  padding: 20px;
 }
 
 .space {
@@ -354,11 +399,15 @@ img {
   justify-content: center ;
   width: 100%;
   height: 20vh;
+opacity: 1;
+background-image:  radial-gradient(#0045f6 0.5px, transparent 0.5px), radial-gradient(#0045f6 0.5px, #ffffff 0.5px);
+background-size: 20px 20px;
+background-position: 0 0,10px 10px;
 }
 
 .contacts-title {
   font-size: 1.5rem;
-  color: #094067;
+  color: #000000;
   padding-bottom: 1rem;
 }
 
@@ -369,7 +418,7 @@ img {
   justify-content: center;
   width: 60vw;
   height: 80%;
-  border: 2px solid #90b4ce;
+  border: 2px solid #0045f6;
 
 }
 

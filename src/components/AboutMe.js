@@ -54,7 +54,10 @@ function AboutMe() {
             <motion.div animate={imageControls} initial = "right_hidden" variants ={variants}> 
             <img className="img-portrait" src={Portrait} alt="portrait"/>
             </motion.div> 
+            <div className="space2">
+                </div>
             </div>
+            
         </div>
     );
 
