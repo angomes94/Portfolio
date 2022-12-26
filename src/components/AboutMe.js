@@ -43,15 +43,15 @@ function AboutMe() {
             <motion.div animate={textControls} initial = "left_hidden" variants ={variants} className="about-me-text">
                 <h4 className="font-roboto-condensed-bold">About Me</h4>
                 <p className="font-roboto-condensed-regular">Hi! My name is André and I've been programming since 2013, first I started
-                    coding microcontrollers and building 3D led cubes and other electronic projects
-                    both in school, at work and some personal projects too. I can build . I always
-                    had a big interest in tech and writing code is one of the lowest barrier ways to
-                    get creative and build things
+                   microcontrollers and building 3D LED cubes and other electronic projects
+                    both in school, at work and some personal projects too. I've always
+                    had a big interest in tech and writing code is one of the lowest barrier to entry ways to
+                    get creative and build things and I love it.
                 </p>               
             </motion.div>
             <div className="space">
                 </div>
-            <motion.div animate={imageControls} initial = "right_hidden" variants ={variants}> 
+            <motion.div className="img-wrapper" animate={imageControls} initial = "right_hidden" variants ={variants}> 
             <img className="img-portrait" src={Portrait} alt="portrait"/>
             </motion.div> 
             <div className="space2">

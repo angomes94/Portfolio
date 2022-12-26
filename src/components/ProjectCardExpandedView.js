@@ -1,15 +1,22 @@
 import React from "react";
 import { dataExpandableCard } from "../data/data";
+import {motion} from "framer-motion";
+
 
 
 function ProjectCardExpandedView(props) {
-  // Find the project with the matching id
+
   const project = dataExpandableCard.find(item => item.id === props.projectId);
 
-  // If a project was found, display its expanded card
   if (project) {
     return (
-        <div className="container-project">
+        <motion.div className="container-project"
+                initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.5,
+        ease: [0, 0.71, 0.2, 1.01]
+      }}>
          <h7 className = "font-roboto-bold">{project.title} <span className="font-montserrat-thin">{project.date}</span></h7>
             <div className="wrapper-project">
                 <p className="description font-montserrat-extralight">{project.description}</p>
@@ -21,10 +28,10 @@ function ProjectCardExpandedView(props) {
                     <img src={project.img4} alt="Project image4"/>
             </div>
         </div>
-      </div>
+      </motion.div>
     );
 }
-  // Otherwise, return null
+
   return null;
 }
 
