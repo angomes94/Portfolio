@@ -28,7 +28,7 @@ function Frontpage() {
                             duration: 1
                         }}>     
                     <h1 className="font-roboto-condensed-light">Hi, my name is</h1>
-                    <h2 className="font-roboto-condensed-bold"> <span className="frontpage-span">André Gomes</span>, I'm a frontend webdeveloper.</h2>
+                    <h2 className="font-roboto-condensed-bold"> <span className="frontpage-span">André Gomes</span>, I'm a Programer.</h2>
                     <h3 className="font-roboto-condensed-regular">Started out in electronics but fell in love with coding.</h3>          
         </motion.div>
         </div>

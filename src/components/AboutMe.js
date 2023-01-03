@@ -42,11 +42,11 @@ function AboutMe() {
         <div  className="about-me-wrapper">
             <motion.div animate={textControls} initial = "left_hidden" variants ={variants} className="about-me-text">
                 <h4 className="font-roboto-condensed-bold">About Me</h4>
-                <p className="font-roboto-condensed-regular">Hi! My name is André and I've been programming since 2013, first I started
-                   microcontrollers and building 3D LED cubes and other electronic projects
+                <p className="font-roboto-condensed-regular">Hi! My name is André and I've been programming since 2013, first I started with
+                   microcontrollers building 3D LED cubes and other electronic projects
                     both in school, at work and some personal projects too. I've always
-                    had a big interest in tech and writing code is one of the lowest barrier to entry ways to
-                    get creative and build things and I love it.
+                    had a big interest in tech and over the years I started to pivout more and more into programing, 
+                    writing code is an amazing way to build creative apps or websites and I love the endless posibilities and constant inovation.
                 </p>               
             </motion.div>
             <div className="space">
