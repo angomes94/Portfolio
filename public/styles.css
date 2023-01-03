@@ -428,6 +428,7 @@ img {
   text-decoration: underline #04cfff;
   text-underline-offset: 0.2em;
   overflow: hidden;
+  padding: 10px;
 }
 
 .container-square-border{
@@ -438,8 +439,7 @@ img {
   width: 60vw;
   height: 80%;
   border: 2px solid #0045f6;
-  padding-bottom: 10px;
-
+  margin-bottom: 10px;
 }
 
 .wrapper-button{
@@ -534,7 +534,6 @@ img {
   /* Contacts */
 
   .contacts-title{
-    padding: 10px;
     font-size: 1rem;
   }
 
