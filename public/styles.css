@@ -419,7 +419,6 @@ img {
   background-image:  radial-gradient(#0045f6 0.5px, transparent 0.5px), radial-gradient(#0045f6 0.5px, #ffffff 0.5px);
   background-size: 20px 20px;
   background-position: 0 0,10px 10px;
-  padding: 10px;
 }
 
 .contacts-title {
@@ -439,6 +438,7 @@ img {
   width: 60vw;
   height: 80%;
   border: 2px solid #0045f6;
+  padding-bottom: 10px;
 
 }
 
@@ -537,7 +537,6 @@ img {
     padding: 10px;
     font-size: 1rem;
   }
-
 
 
 }
