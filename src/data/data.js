@@ -91,7 +91,7 @@ const dataExpandableCard = [
     }, {
         id: 8,
         date:" - 2020/2022",
-        title: "Automated Trading Algorithms",
+        title: "Trading Algorithms",
         description: "Started designing trading bots as an hobbie for myself and friends and it grew to a couple dozen clients," +
                 "trading bots were mainly programed inside Metatrader 4 using MQL4 which as a sintax similar to C++ ",
         img1: "../images/MusicPad_img1.jpg",
@@ -137,7 +137,7 @@ const dataProjectCell = [
         intro: "Solar system and battery bank fully monitured by Raspberry pi"
     }, {
         id: 8,
-        title: "Automated Trading Algorithms",
+        title: "Trading Algorithms",
         intro: "Complex trading algorithms programed in MQL4"
     }
 ];
