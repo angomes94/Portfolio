@@ -357,9 +357,8 @@ h1, h3 {
   display: flex;
   position: relative;
   width: 100%;
-  height: 100vh;
   flex-direction: column;
-  justify-content: flex-start;
+
 }
 
 .wrapper-project {
@@ -518,6 +517,19 @@ img {
 
 
   /* Expandable Card */
+
+  .wrapper-project{
+    flex-direction: column;
+  }
+  .description{
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .wrapper-images{
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
 
   .expanded-card{
     width: 90vw;
