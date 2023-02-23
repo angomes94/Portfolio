@@ -8,7 +8,7 @@ import Contact from "./components/Contact"
 
 export default function App() {
   return (
-    <div className=" w-full bg-cream">
+    <div className=" w-full bg-cream overflow-x-hidden">
     <Header/>
     <AboutMe/>
     <Skills/>

@@ -6,7 +6,7 @@ export default function ProjectCard({ isOrientationStart, project }) {
   const [isExpand, setIsExpand] = useState(false);
 
   return (
-    <div className='flex flex-col items-center justify-center bg-dark-slate m-10 rounded-3xl p-5'>
+    <div className='flex flex-col items-center justify-center bg-dark-slate m-10 rounded-3xl p-5 duration-300 hover:bg-opacity-80 hover:scale-90'>
       <h1 className='text-white font-bold text-xl'>{project.title}</h1>
       <Transition
         show={isExpand}
