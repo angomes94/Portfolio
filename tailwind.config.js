@@ -15,7 +15,11 @@ module.exports = {
       'grey': '#505668',
       'cream': '#f1ece1',
       'orange': '#c05850'
-    },},
+    },
+    transitionProperty: {
+      'height': 'height',
+    }  
+  },
   },
   plugins: [],
 }

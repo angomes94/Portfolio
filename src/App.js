@@ -6,6 +6,7 @@ import Skills from "./components/Skills"
 import AboutMe from "./components/AboutMe"
 import Contact from "./components/Contact"
 
+
 export default function App() {
   return (
     <div className=" w-full bg-cream overflow-x-hidden">
