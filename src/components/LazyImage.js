@@ -49,12 +49,13 @@ const LazyImage = ({ src, alt, className }) => {
   }, [src, imageSrc, imageRef]);
 
   return (
-    <div className="relative">
-      <div
-        className={`absolute inset-0 bg-gray-300 ${
-          imageSrc ? "opacity-0" : "opacity-100"
-        }`}
-      />
+    <div className=" flex justify-center items-center">
+
+      {imageSrc ? null : (
+        <i className=" fa-solid fa-circle-notch text-center text-4xl text-gray-500 animate-spin p-5" />
+      )}
+       
+     
       <img
         ref={setImageRef}
         className={`w-full ${className}`}
@@ -67,6 +68,7 @@ const LazyImage = ({ src, alt, className }) => {
       />
     </div>
   );
+  
 };
 
 function loadImage(src) {
