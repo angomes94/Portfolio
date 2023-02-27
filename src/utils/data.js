@@ -116,11 +116,12 @@ export const PROJECTDATA = {
         img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/vapokiss_img2.png",
         img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/vapokiss_img3.png",
         img4: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/vapokiss_img4.png",
+        github: "https://github.com/angomes94/Vapokiss"
     },
     TEAM_FLOW: {
         id: 10,
         date: "2023",
-        title: "Project Managment WebApp",
+        title: "Project Management WebApp",
         description: " This is a CRUD app that I built using NEXT.js, Firebase Auth and Firestore" +
             " It allows business to organize projects, cordinate their teams and oversee everything that is happening" +
             " it's a fully functioning and scalable project.",
@@ -128,6 +129,7 @@ export const PROJECTDATA = {
         img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/teamflow_img2.png",
         img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/teamflow_img3.png",
         img4: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/teamflow_img4.png",
+        github: "https://github.com/angomes94/teamflow"
     }
 };
 

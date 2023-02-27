@@ -33,8 +33,9 @@ export default function ProjectCard({ isOrientationStart, project }) {
             alt='Project image 4'
           />
         </div>
-        <div className='text-black font-extralight text-lg p-10 md:max-w-lg bg-zinc-300 rounded-xl'>
+        <div className=' flex flex-col text-black font-extralight text-lg p-10 md:max-w-lg bg-zinc-300 rounded-xl'>
           <p>{project.description}</p>
+          {project.github && <i onClick={ () => window.open(`${project.github}`, '_blank', 'noopener,noreferrer') } className="fa-brands fa-github text-4xl pt-5 text-center cursor-pointer duration-300 hover:scale-110 focus:scale-110"></i>}
         </div>
       </div>
       <i
