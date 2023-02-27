@@ -50,11 +50,10 @@ const LazyImage = ({ src, alt, className }) => {
 
   return (
     <div className=" flex justify-center items-center">
-
-      {imageSrc ? null : (
-        <i className=" fa-solid fa-circle-notch text-center text-4xl text-gray-500 animate-spin p-5" />
+     
+     {imageSrc ? null : (
+        <i className= " fa-solid fa-circle-notch animate-spin absolute text-4xl text-gray-500" />
       )}
-       
      
       <img
         ref={setImageRef}

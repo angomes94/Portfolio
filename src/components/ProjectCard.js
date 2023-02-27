@@ -11,7 +11,7 @@ export default function ProjectCard({ isOrientationStart, project }) {
         className={`flex flex-col transition-all duration-500 ease-in-out ${isOrientationStart ? 'md:flex-row' : 'md:flex-row-reverse'
           } justify-center items-center ${isExpand ? ' h-[62rem] md:h-[42rem] opacity-100' : ' h-0 opacity-0 overflow-hidden'
           }`}>
-        <div className='grid grid-cols-2 gap-4 max-w-sm p-6 rounded-xl'>
+        <div className={` grid grid-cols-2 ${project.id === 6 || project.id === 7 ? "max-w-sm" : "max-w-lg"}  gap-4 p-6 rounded-xl`}>
           <LazyImage
             className='rounded-xl border-4 border-orange'
             src={project.img1}
@@ -33,7 +33,7 @@ export default function ProjectCard({ isOrientationStart, project }) {
             alt='Project image 4'
           />
         </div>
-        <div className='text-black font-extralight text-lg p-10 bg-zinc-300 rounded-xl'>
+        <div className='text-black font-extralight text-lg p-10 md:max-w-lg bg-zinc-300 rounded-xl'>
           <p>{project.description}</p>
         </div>
       </div>

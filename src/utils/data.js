@@ -106,6 +106,28 @@ export const PROJECTDATA = {
         img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
         img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
         img4: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
+    },
+    VAPOKISS: {
+        id: 9,
+        date: "2022",
+        title: "E-Commerce store",
+        description: " E-commerce store using Next.js, Sanity headless CMS and Stripe API ",
+        img1: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
+        img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
+        img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
+        img4: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
+    },
+    TEAM_FLOW: {
+        id: 10,
+        date: "2023",
+        title: "Project Managment WebApp",
+        description: " This is a <strong> CRUD </strong> app that I built using NEXT.js, Firebase Auth and Firestore" +
+            " It allows business to organize projects, cordinate their teams and oversee everything that is happenig" +
+            " it's a fully functioning and scalable project. ",
+        img1: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
+        img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
+        img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
+        img4: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
     }
 };
 
