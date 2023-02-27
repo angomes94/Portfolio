@@ -27,7 +27,7 @@ export const PROJECTDATA = {
         date: "2015/2017",
         title: "HV Capacitors Lab",
         description: "Test bench used for aeging HV capacitors for assessing quality, dielectric integrety and strength," +
-            "3 HV Converters creating deep dischanging cicles with specific wave forms with both DC and AC current," +
+            "3 HV Converters creating deep discharge cicles with specific wave forms" +
             " in order to simulate harsh operating conditions, Temperature was also used as a stress factor." +
             " results were used to select the best technology and brands to use on Main Converters that supplied LHC magnets",
         img1: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/TestBed_img1.jpg",
@@ -76,7 +76,7 @@ export const PROJECTDATA = {
         date: "2017",
         description: "Music Pad was an hobbie Android project that I made in 2015 with Android Studio" +
             "it was built in Java and XML. The user could play the default sounds but also upload" +
-            " or record new ones using the smartphone's mic, key color and hints were also costumaizible",
+            " or record new ones using the smartphone's mic, key color and hints were also customizable",
         img1: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/MusicPad_img1.jpg",
         img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/MusicPad_img2.jpg",
         img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/MusicPad_img3.jpg",
@@ -88,8 +88,8 @@ export const PROJECTDATA = {
         date: "2019",
         description: "I turned an old Motor Home into a 6KW power house using deep cycle AGM bateries supplied by policristalin solar panels" +
             " though a MPPT solar controler and finally delivered with a pure sine wave 1500W inverter." +
-            " everything was routed into a Raspberry Pi that displayed all the stats on a GUI using a touch screen, this GUI" +
-            " also alowed the control of some appliances inside the Motor Home, the GUI was programed using Phyton and collected some stats on power usage over time",
+            " everything was routed to a Raspberry Pi that displayed all the stats on a GUI using a touch screen, this GUI" +
+            " also alowed the control of some appliances inside the Motor Home, the GUI was made using Phyton.",
         img1: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/MotorHome_img1.jpg",
         img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/MotorHome_img2.jpg",
         img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/MotorHome_img3.jpg",
@@ -101,7 +101,7 @@ export const PROJECTDATA = {
         title: "Trading Algorithms",
         description: "Started designing trading bots as an hobbie for myself and friends and it grew to a couple dozen clients," +
             "trading bots were mainly programed inside Metatrader 4 using MQL4 which as a sintax similar to C++, These bots used" +
-            " various indicators and free margin management techniques and operated autonumously in the financial markets",
+            " various indicators and margin management techniques and operated autonumously in the Forex market",
         img1: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
         img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
         img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
@@ -111,23 +111,23 @@ export const PROJECTDATA = {
         id: 9,
         date: "2022",
         title: "E-Commerce store",
-        description: " E-commerce store using Next.js, Sanity headless CMS and Stripe API ",
-        img1: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
-        img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
-        img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
-        img4: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
+        description: " E-commerce store built using Next.js, Sanity headless CMS and Stripe API. ",
+        img1: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/vapokiss_img1.png",
+        img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/vapokiss_img2.png",
+        img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/vapokiss_img3.png",
+        img4: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/vapokiss_img4.png",
     },
     TEAM_FLOW: {
         id: 10,
         date: "2023",
         title: "Project Managment WebApp",
-        description: " This is a <strong> CRUD </strong> app that I built using NEXT.js, Firebase Auth and Firestore" +
-            " It allows business to organize projects, cordinate their teams and oversee everything that is happenig" +
-            " it's a fully functioning and scalable project. ",
-        img1: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
-        img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
-        img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
-        img4: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
+        description: " This is a CRUD app that I built using NEXT.js, Firebase Auth and Firestore" +
+            " It allows business to organize projects, cordinate their teams and oversee everything that is happening" +
+            " it's a fully functioning and scalable project.",
+        img1: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/teamflow_img1.png",
+        img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/teamflow_img2.png",
+        img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/teamflow_img3.png",
+        img4: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/teamflow_img4.png",
     }
 };
 

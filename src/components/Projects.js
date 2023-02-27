@@ -49,7 +49,7 @@ export default function Projects() {
             <motion.div ref={ref} animate={controls} initial="hidden" variants={variants} >
                 <h1 className='text-center text-black font-extrabold text-4xl pt-5 underline underline-offset-8 decoration-orange'>Projects</h1>
                 {Object.keys(PROJECTDATA).map((key, index) => {
-                    return (<ProjectCard isOrientationStart={index % 2 === 0} project={PROJECTDATA[key]} />)
+                    return (<ProjectCard key={index} isOrientationStart={index % 2 === 0} project={PROJECTDATA[key]} />)
                 })}
             </motion.div>
         </div>

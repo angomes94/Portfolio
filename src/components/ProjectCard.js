@@ -5,7 +5,7 @@ export default function ProjectCard({ isOrientationStart, project }) {
   const [isExpand, setIsExpand] = useState(false);
 
   return (
-    <div className='flex flex-col items-center justify-center bg-dark-slate m-10 rounded-3xl p-5 duration-300 hover:bg-opacity-80 hover:scale-90'>
+    <div className='flex flex-col items-center justify-center bg-dark-slate m-10 rounded-3xl p-5 duration-300 hover:bg-opacity-80'>
       <h1 className='text-white font-bold text-xl'>{project.title} {isExpand && <span className=' text-lg font-thin'> {" - " + project.date} </span>}</h1>
       <div
         className={`flex flex-col transition-all duration-500 ease-in-out ${isOrientationStart ? 'md:flex-row' : 'md:flex-row-reverse'

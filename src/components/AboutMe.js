@@ -45,11 +45,11 @@ export default function AboutMe() {
         <LazyImage className="rounded-full" src="https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/portrait.jpg" alt="Portrait" />
       </motion.div>
       <motion.p animate={textControls} initial="right_hidden" variants={variants} className='flex-1 p-10 md:pl-32 md:bg-zinc-300 md:rounded-l-full text-lg font-extralight'>
-      Hi! My name is André and I've been programming since 2013, first I started with
+        Hi! My name is André and I've been coding since 2013, first I started with
         microcontrollers building 3D LED cubes and other electronic projects
         both in school, at work and some personal projects too. I've always
         had a big interest in tech and over the years I started to pivout more and more into programing,
-        writing code is an amazing way to build creative apps or websites and I love the endless posibilities and constant inovation.
+        writing code is an amazing way to build creative apps and websites.
       </motion.p>
 
     </div>
