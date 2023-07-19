@@ -9,9 +9,9 @@ export default function ProjectCard({ isOrientationStart, project }) {
       <h1 className='text-white font-bold text-xl'>{project.title} {isExpand && <span className=' text-lg font-thin'> {" - " + project.date} </span>}</h1>
       <div
         className={`flex flex-col transition-all duration-500 ease-in-out ${isOrientationStart ? 'md:flex-row' : 'md:flex-row-reverse'
-          } justify-center items-center ${isExpand ? ' h-[62rem] md:h-[42rem] opacity-100' : ' h-0 opacity-0 overflow-hidden'
+          } justify-center items-center ${isExpand ? ' h-[66rem] md:h-[42rem] opacity-100' : ' h-0 opacity-0 overflow-hidden'
           }`}>
-        <div className={` grid grid-cols-2 ${project.id === 6 || project.id === 7 ? "max-w-sm" : "max-w-lg"}  gap-4 p-6 rounded-xl`}>
+        <div className={` grid grid-cols-2 ${project.id === 6 || project.id === 7 || project.id === 11 ? "max-w-sm" : "max-w-lg"}  gap-4 p-6 rounded-xl`}>
           <LazyImage
             className='rounded-xl border-4 border-orange'
             src={project.img1}

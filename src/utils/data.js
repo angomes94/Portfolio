@@ -100,7 +100,7 @@ export const PROJECTDATA = {
         date: "2020/2022",
         title: "Trading Algorithms",
         description: "Started designing trading bots as an hobbie for myself and friends and it grew to a couple dozen clients," +
-            "trading bots were mainly programed inside Metatrader 4 using MQL4 which as a sintax similar to C++, These bots used" +
+            "trading bots were mainly programed inside Metatrader 4 using MQL4 which as a sintax similar to C, These bots used" +
             " various indicators and margin management techniques and operated autonumously in the Forex market",
         img1: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
         img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
@@ -111,7 +111,7 @@ export const PROJECTDATA = {
         id: 9,
         date: "2022",
         title: "E-Commerce store",
-        description: " E-commerce store built using Next.js, Sanity headless CMS and Stripe API. ",
+        description: " E-commerce store built using Next.js, Sanity headless CMS, Eupago Payment processing system, Firestore and Discord Webhooks. This website was moved into Woocomerce for ease of use and maintenance. ",
         img1: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/vapokiss_img1.png",
         img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/vapokiss_img2.png",
         img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/vapokiss_img3.png",
@@ -130,6 +130,17 @@ export const PROJECTDATA = {
         img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/teamflow_img3.png",
         img4: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/teamflow_img4.png",
         github: "https://github.com/angomes94/teamflow"
+    },
+    SANCILIX: {
+        id: 11,
+        date: "2023",
+        title: "Construction Website",
+        description: " Website built for a client using NEXT.js and Sanity headless CMS, the porpuse of" +
+        " the website is to give an introduction to the company and the team but also showcase the projects that have been built.",
+        img1: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/sancilix_img1.png",
+        img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/sancilix_img2.png",
+        img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/sancilix_img3.png",
+        img4: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/sancilix_img4.png",
     }
 };
 
