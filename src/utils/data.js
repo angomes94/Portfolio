@@ -134,13 +134,15 @@ export const PROJECTDATA = {
     SANCILIX: {
         id: 11,
         date: "2023",
-        title: "Construction Website",
+        title: "Real Estate Construction Company ",
         description: " Website built for a client using NEXT.js and Sanity headless CMS, the porpuse of" +
         " the website is to give an introduction to the company and the team but also showcase the projects that have been built.",
         img1: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/sancilix_img1.png",
         img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/sancilix_img2.png",
         img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/sancilix_img3.png",
         img4: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/sancilix_img4.png",
+        github: "https://github.com/angomes94/sancilix",
+        url: "sancilix.pt"
     }
 };
 
