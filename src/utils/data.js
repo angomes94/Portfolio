@@ -144,7 +144,7 @@ export const PROJECTDATA = {
         img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/sancilix_img3.png",
         img4: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/sancilix_img4.png",
         github: "https://github.com/angomes94/sancilix",
-        url: "sancilix.pt"
+        url: "https://sancilix.pt"
     }
 };
 
