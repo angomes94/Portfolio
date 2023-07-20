@@ -1,58 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import LazyImage from './LazyImage';
 
 export default function ProjectCard({ isOrientationStart, project }) {
   const [isExpand, setIsExpand] = useState(false);
-  const [height, setHeight] = useState("");
-
-  useEffect(() => {
-
-    switch (project.id) {
-      case 0:
-        setHeight("h-[150rem]")
-        break;
-      case 1:
-        setHeight("h-[150rem]")
-        break;
-      case 2:
-        setHeight("h-[150rem]")
-        break;
-      case 3:
-        setHeight("h-[150rem]")
-        break;
-      case 4:
-        setHeight("h-[150rem]")
-        break;
-      case 5:
-        setHeight("h-[150rem]")
-        break;
-      case 6:
-        setHeight("h-[150rem]")
-        break;
-      case 7:
-        setHeight("h-[150rem]")
-        break;
-      case 8:
-        setHeight("h-[150rem]")
-        break;
-      case 9:
-        setHeight("h-[150rem]")
-        break;
-      case 10:
-        setHeight("h-[150rem]")
-        break;
-      case 11:
-        setHeight("h-[150rem]")
-        break;
-
-      default:
-        setHeight("h-[150rem]")
-        break;
-    }
-
-
-  }, [project.id])
-
+  
 
   return (
     <div className='flex flex-col items-center justify-center bg-dark-slate m-10 rounded-3xl p-5 duration-300 hover:bg-opacity-80'>
@@ -82,7 +33,7 @@ export default function ProjectCard({ isOrientationStart, project }) {
             />
           </div>
           <div className='flex flex-col text-black font-extralight text-center p-5 bg-zinc-300 rounded-xl'>
-            <p className='w-96'>{project.description}</p>
+            <p className='md:w-96'>{project.description}</p>
             <div className='flex flex-row justify-center items-center pt-5'>
             {project.github && <i onClick={() => window.open(`${project.github}`, '_blank', 'noopener,noreferrer')} className="fa-brands fa-github text-4xl px-2  text-center cursor-pointer duration-300 hover:scale-110 focus:scale-110"></i>}
             {project.url && <i onClick={() => window.open(`${project.url}`, '_blank', 'noopener,noreferrer')} className=" fa-solid fa-link text-4xl px-2 text-center cursor-pointer duration-300 hover:scale-110 focus:scale-110"></i> }

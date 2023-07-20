@@ -100,7 +100,7 @@ export const PROJECTDATA = {
         date: "2020/2022",
         title: "Trading Algorithms",
         description: "Started designing trading bots as an hobbie for myself and friends and it grew to a couple dozen clients," +
-            "trading bots were mainly programed inside Metatrader 4 using MQL4 which as a sintax similar to C, These bots used" +
+            "trading bots were mainly programed inside Metatrader 4 using MQL4 which as a sintax similar to C++, These bots used" +
             " various indicators and margin management techniques and operated autonumously in the Forex market",
         img1: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
         img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/Trading_img1.jpg",
@@ -129,13 +129,15 @@ export const PROJECTDATA = {
         img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/teamflow_img2.png",
         img3: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/teamflow_img3.png",
         img4: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/teamflow_img4.png",
-        github: "https://github.com/angomes94/teamflow"
+        github: "https://github.com/angomes94/teamflow",
+        url: "https://teamflow-angomes94.vercel.app/"
+
     },
     SANCILIX: {
         id: 11,
         date: "2023",
         title: "Real Estate Construction Company ",
-        description: " Website built for a client using NEXT.js and Sanity headless CMS, the porpuse of" +
+        description: " Website built for a client using NEXT.js and Sanity headless CMS, The purpose of" +
         " the website is to give an introduction to the company and the team but also showcase the projects that have been built.",
         img1: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/sancilix_img1.png",
         img2: "https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/sancilix_img2.png",
