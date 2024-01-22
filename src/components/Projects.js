@@ -51,6 +51,7 @@ export default function Projects() {
                 {Object.keys(PROJECTDATA).map((key, index) => {
                     return (<ProjectCard key={index} isOrientationStart={index % 2 === 0} project={PROJECTDATA[key]} />)
                 })}
+                
             </motion.div>
         </div>
     )

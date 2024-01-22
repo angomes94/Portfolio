@@ -36,16 +36,18 @@ export default function ProjectCard({ isOrientationStart, project }) {
             <p className='md:w-96'>{project.description}</p>
             <div className='flex flex-row justify-center items-center pt-5'>
             {project.github && <i onClick={() => window.open(`${project.github}`, '_blank', 'noopener,noreferrer')} className="fa-brands fa-github text-4xl px-2  text-center cursor-pointer duration-300 hover:scale-110 focus:scale-110"></i>}
-            {project.url && <i onClick={() => window.open(project.url)} className=" fa-solid fa-link text-4xl px-2 text-center cursor-pointer duration-300 hover:scale-110 focus:scale-110"></i> }
+            {project.url && <i onClick={() => window.open(`${project.url}`, '_blank', 'noopener,noreferrer')} className=" fa-solid fa-link text-4xl px-2 text-center cursor-pointer duration-300 hover:scale-110 focus:scale-110"></i> }
             </div>
           </div>
         </div>
       </div>
+      <div className=' w-full block text-center'>
       <i
         onClick={() => setIsExpand(!isExpand)}
-        className={`fa-solid cursor-pointer ${isExpand ? 'text-white fa-chevron-up' : 'text-orange rotate-0 fa-chevron-down'
+        className={`fa-solid cursor-pointer p-2 ${isExpand ? 'text-white fa-chevron-up' : 'text-orange rotate-0 fa-chevron-down'
           } text-4xl duration-500 hover:scale-110 hover:animate-bounce `}
       />
+      </div>
     </div>
   );
 }
