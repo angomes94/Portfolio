@@ -71,7 +71,7 @@ export default function Contact() {
   return (
 <motion.div ref={ref} animate={controls} initial="hidden" variants={variants}
     className=" flex flex-col justify-center items-center w-full">
-      <h1 className=' text-black text-4xl font-extrabold underline underline-offset-4 pb-5 decoration-orange'>Get in Touch</h1>
+      <h1 className=' text-black text-4xl font-extrabold underline underline-offset-4 py-5 decoration-orange'>Get in Touch</h1>
       <form id="contact" ref={form} onSubmit={sendEmail} className="max-w-lg w-full px-5">
         <div className="mb-4">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="user_name">

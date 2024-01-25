@@ -45,13 +45,12 @@ export default function Projects() {
 
 
     return (
-        <div id='projects'>
-            <motion.div ref={ref} animate={controls} initial="hidden" variants={variants} >
-                <h1 className='text-center text-black font-extrabold text-4xl pt-5 underline underline-offset-8 decoration-orange'>Projects</h1>
+        <div id='projects' className='w-full flex flex-col justify-center items-center'>
+            <h1 className='text-center text-black font-extrabold text-4xl py-5 underline underline-offset-8 decoration-orange'>Projects</h1>
+            <motion.div ref={ref} animate={controls} initial="hidden" variants={variants} className='flex flex-col md:h-[750px] md:w-3/4 overflow-y-auto p-4' >
                 {Object.keys(PROJECTDATA).map((key, index) => {
                     return (<ProjectCard key={index} isOrientationStart={index % 2 === 0} project={PROJECTDATA[key]} />)
                 })}
-                
             </motion.div>
         </div>
     )

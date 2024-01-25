@@ -6,8 +6,8 @@ export default function Footer() {
 
   return (
     <div id='contact' className=' flex flex-row w-full justify-center items-center py-5'>
-      <i onClick={() => window.open(urlLinkedin, '_blank', 'noopener,noreferrer')} className="fa-brands fa-linkedin-in text-2xl cursor-pointer pr-4 duration-300 hover:scale-110 focus:scale-110"></i>
-      <i onClick={() => window.open(urlIG, '_blank', 'noopener,noreferrer')} className="fa-brands fa-instagram text-2xl cursor-pointer duration-300 hover:scale-110 focus:scale-110"></i>
+      <i onClick={() => window.open(urlLinkedin, '_blank', 'noopener,noreferrer')} className="fa-brands fa-linkedin-in text-2xl cursor-pointer pr-2 duration-300 hover:scale-110 focus:scale-110"></i>
+      <i onClick={() => window.open(urlIG, '_blank', 'noopener,noreferrer')} className="fa-brands fa-instagram text-2xl cursor-pointer pl-2 duration-300 hover:scale-110 focus:scale-110"></i>
     </div>
   )
 }
