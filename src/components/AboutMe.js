@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react'
-import LazyImage from './LazyImage'
 import { motion, useAnimation, useInView } from "framer-motion";
 
 
@@ -42,7 +41,7 @@ export default function AboutMe() {
   return (
     <div ref={ref} id='aboutme' className='flex flex-col md:flex-row w-full justify-center items-center'>
       <motion.div animate={imageControls} initial="left_hidden" variants={variants} className='flex-1 p-20 md:p-36 md:max-w-4xl'>
-        <LazyImage className="rounded-full" src="https://angomes-portfolio-images.s3.eu-west-3.amazonaws.com/portrait.jpg" alt="Portrait" />
+        <img className="rounded-full" src="/images/portrait.jpg" alt="Portrait" />
       </motion.div>
       <motion.p animate={textControls} initial="right_hidden" variants={variants} className='flex-1 p-10 md:pl-32 md:bg-zinc-300 md:rounded-l-full text-lg font-extralight'>
         Hi! My name is André and I've been coding since 2013, first I started with
@@ -51,7 +50,6 @@ export default function AboutMe() {
         had a big interest in tech and over the years I started to pivout more and more into programing,
         writing code is an amazing way to build creative apps and websites.
       </motion.p>
-
     </div>
   )
 }
